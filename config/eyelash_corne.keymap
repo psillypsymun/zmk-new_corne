@@ -26,14 +26,6 @@
     behaviors {
         c-copy:
 
-        c-copy {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp C>, <&kp K_COPY>;
-
-            label = "C-COPY";
-        };
-
         v_paste: v_paste {
             compatible = "zmk,behavior-tap-dance";
             label = "V_PASTE";
@@ -43,7 +35,10 @@
 
         c-copy:
 
-        c-copy { compatible = "zmk,behavior-tap-dance"; };
+        copy: c-copy {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp C>, <&kp K_COPY>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
