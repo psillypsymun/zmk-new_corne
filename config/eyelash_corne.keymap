@@ -115,6 +115,20 @@
         tap-ms = <30>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        TIL {
+            bindings = <&kp TILDE>;
+            key-positions = <0 1>;
+        };
+
+        Layr1_toggle {
+            bindings = <&tog 1>;
+            key-positions = <1 2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
