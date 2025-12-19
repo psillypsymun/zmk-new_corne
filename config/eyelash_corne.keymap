@@ -127,6 +127,16 @@
             bindings = <&tog 1>;
             key-positions = <1 2>;
         };
+
+        TBCOMBO {
+            bindings = <&kp TAB>;
+            key-positions = <18 22>;
+        };
+
+        UNDO {
+            bindings = <&kp LC(Z)>;
+            key-positions = <29 30>;
+        };
     };
 
     keymap {
