@@ -49,6 +49,56 @@
             tapping-term-ms = <50>;
             hold-while-undecided;
         };
+
+        hmshiftR: hmshiftR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMSHIFTR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 0 1 2 3 4 13 14 15 16 17 28 29 30 31 32 18 33 44 43 42>;
+        };
+
+        hmshfitL: hmshfitL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMSHFITL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 46 47 45>;
+            tapping-term-ms = <200>;
+        };
+
+        hmR: hmR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 0 1 2 3 4 13 14 15 16 17 28 29 30 31 32 18 33 44 43 42>;
+            flavor = "tap-preferred";
+        };
+
+        hmL: hmL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 46 47 45>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     rgb_encoder: rgb_encoder {
