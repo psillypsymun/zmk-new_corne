@@ -135,10 +135,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp B                  &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LEFT_CONTROL CAPS  &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL              &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_COMMAND ENTER
-                                     &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&kp B                  &kp Q            &kp W            &kp E         &kp R              &kp T                               &kp UP                &kp Y        &kp U              &kp I         &kp O        &kp P                     &kp BSPC
+&mt LEFT_CONTROL CAPS  &hmL LEFT_ALT A  &hmL LEFT_GUI S  &hmL LCTRL D  &hmL LEFT_SHIFT F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmR LEFT_SHIFT J  &hmR RCTRL K  &hmR LGUI L  &hmR RIGHT_ALT SEMICOLON  &kp SQT
+&kp LCTRL              &kp Z            &kp X            &kp C         &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M              &kp COMMA     &kp DOT      &kp FSLH                  &mt RIGHT_COMMAND ENTER
+                                                         &kp LGUI      &lt 2 C_REPEAT     &lt 3 SPACE                                               &lt 3 ENTER  &mo 2              &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -178,6 +178,24 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
