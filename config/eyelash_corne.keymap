@@ -24,7 +24,12 @@
 
 / {
     behaviors {
-        c-copy:
+        c_copy: c_copy {
+            compatible = "zmk,behavior-tap-dance";
+            label = "C_COPY";
+            #binding-cells = <0>;
+            bindings = <&kp C>, <&kp K_COPY>;
+        };
 
         v_paste: v_paste {
             compatible = "zmk,behavior-tap-dance";
