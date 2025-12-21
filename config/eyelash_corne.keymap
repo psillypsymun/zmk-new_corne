@@ -123,36 +123,6 @@
     combos {
         compatible = "zmk,combos";
 
-        CPTILDE {
-            bindings = <&kp TILDE>;
-            key-positions = <0 1>;
-        };
-
-        OPAREN {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <4 3>;
-        };
-
-        OCURLY {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <16 17>;
-        };
-
-        OSQUB {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <31 32>;
-        };
-
-        CPAREN {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <8 9>;
-        };
-
-        CCURLY {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <23 24>;
-        };
-
         CSQUARE {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <37 38>;
